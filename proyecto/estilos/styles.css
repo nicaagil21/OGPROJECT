@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../fuentes/LemonMilk-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fuentes/Roboto-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fuentes/Roboto-Medium.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #111111;
+    font-family: 'Roboto Light', sans-serif;
+}
+
+#barraAnuncio {
+    background-color: #111111;
+    color: #ffffff;
+    height: 50px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textoAnuncio {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#enlaceLogoCentral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logoInsignia {
+    max-height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+#zonaUsuarioAcceso {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.enlaceAcceso {
+    color: #ffffff;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.iconoCabecera {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#cabeceraSeccion {
+    height: 60px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#seleccionGenero {
+    display: flex;
+    gap: 16px;
+}
+
+.pestanaGenero {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.pestanaGenero.activa {
+    border-bottom: 2px solid #111111;
+    padding-bottom: 2px;
+}
+
+#menuCategorias {
+    display: flex;
+    gap: 28px;
+}
+
+.enlaceCategoria {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 14px;
+    color: #111111;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#buscadorCabeza {
+    font-family: 'Roboto Light', sans-serif;
+    padding: 6px 14px;
+    border: 1px solid #6b6b6b;
+    border-radius: 0;
+    outline: none;
+    background-color: #ffffff;
+    color: #111111;
+    font-size: 13px;
+    width: 180px;
+}
+
+#piePagina {
+    padding: 16px;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #6b6b6b;
+}
+
+.textoPie {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}

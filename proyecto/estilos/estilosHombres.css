@@ -1,0 +1,103 @@
+#contenedorPagina {
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+#seccionPrendas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tarjetaPrenda {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cajaImagenPrenda {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 2px solid #000000;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.imagenPrenda {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.tarjetaPrenda:hover .imagenPrenda {
+    transform: scale(1.03);
+}
+
+.nombrePrenda {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    margin-top: 6px;
+}
+
+.descripcionPrenda {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 13px;
+    color: #6b6b6b;
+    line-height: 1.4;
+}
+
+.precioPrenda {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 16px;
+    color: #111111;
+}
+
+#seccionInfoBloques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.bloqueInformativo {
+    background-color: #e8f3ff;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.tituloBloqueInfo {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 18px;
+    color: #111111;
+}
+
+.botonAccionBloque {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #111111;
+    padding: 12px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.botonAccionBloque:hover {
+    background-color: #6b6b6b;
+}
